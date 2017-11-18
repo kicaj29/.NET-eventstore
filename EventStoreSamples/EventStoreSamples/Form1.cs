@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using System.ServiceModel.Syndication;
+using EventStoreNugetUsage;
 
 namespace EventStoreSamples
 {
@@ -116,6 +117,12 @@ namespace EventStoreSamples
         private void btnGetPrevious_Click(object sender, EventArgs e)
         {
             var current = ReadPrevious(this._last);
+        }
+
+        private void btnNugetWriteRead_Click(object sender, EventArgs e)
+        {
+            var samples = new EventStoreNugetSamples();
+            samples.ConnectWriteRead();
         }
     }
 }

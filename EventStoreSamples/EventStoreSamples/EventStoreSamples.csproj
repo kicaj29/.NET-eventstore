@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EventStoreNugetUsage\EventStoreNugetUsage.csproj">
+      <Project>{3479c17a-79b1-4580-8647-702c7b6f74f7}</Project>
+      <Name>EventStoreNugetUsage</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
